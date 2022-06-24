@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4013254746517429689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4013254746517429691}
+  - component: {fileID: 4013254746517429688}
+  - component: {fileID: 8289038245742653683}
+  m_Layer: 0
+  m_Name: HVRGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4013254746517429691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013254746517429689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.09276129, y: 1.099001, z: 0.4111318}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4013254746517429688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013254746517429689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923ec526580e484ca0d4716c43ccccc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerController: {fileID: 0}
+  HighlightPrefab: {fileID: 6406414471183466341, guid: 9c947a50565fd2a4f96255015a28f032,
+    type: 3}
+  Camera: {fileID: 0}
+  ScreenFader: {fileID: 0}
+--- !u!114 &8289038245742653683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013254746517429689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e2703aa70f47be808cc7d516fced77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HMDFirstActivation:
+    m_PersistentCalls:
+      m_Calls: []
+  HMDActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  HMDDeactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  HMDRecentered:
+    m_PersistentCalls:
+      m_Calls: []
+  LeftControllerConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  RightControllerConnected:
+    m_PersistentCalls:
+      m_Calls: []
+  ForceOVRInputUpdate: 0
+  LeftController: {fileID: 0}
+  RightController: {fileID: 0}
+  LeftXRInputController: {fileID: 0}
+  RightXRInputController: {fileID: 0}
+  LeftOculusController: {fileID: 0}
+  RightOculusController: {fileID: 0}
+  LeftSteamController: {fileID: 0}
+  RightSteamController: {fileID: 0}
+  OculusInputSDK: 0
+  WMRInputSDK: 0
+  ViveInputSDK: 0
+  KnucklesSDK: 0
+  WMRInputMap: {fileID: 11400000, guid: 124009afce8494b46b50a7b8e468ed5b, type: 2}
+  OculusInputMap: {fileID: 11400000, guid: dcf21fbd7ffd7f947b782b608806c6c4, type: 2}
+  WMROpenVRInputMap: {fileID: 11400000, guid: 73f6a87a93c783d4c9388abfdbe5c0af, type: 2}
+  OculusOpenVRInputMap: {fileID: 11400000, guid: f7c2d96778c503b46966cfb5b4adf828,
+    type: 2}
+  ViveInputMap: {fileID: 11400000, guid: fe1ab9350dfac0141ae1397f20750127, type: 2}
+  KnucklesInputMap: {fileID: 11400000, guid: c916ec0ed5099a6488a2c81fae5ef2f3, type: 2}
+  HMDManufacturer: 
+  HMDName: 
+  LeftManufacturer: 
+  LeftControllerName: 
+  RightManufacturer: 
+  RightControllerName: 
+  WMRDeadzone: {x: 0.15, y: 0.15}
+  OculusDeadzone: {x: 0.15, y: 0.15}
+  ViveDeadzone: {x: 0, y: 0}
+  KnucklesDeadzone: {x: 0, y: 0}
+  DeadzoneOverride: {x: 0, y: 0}
+  OverrideDeadzone: 0
+  LeftFeatures: []
+  RightFeatures: []
+  HMDFeatures: []
+  hmdpos: {x: 0, y: 0, z: 0}

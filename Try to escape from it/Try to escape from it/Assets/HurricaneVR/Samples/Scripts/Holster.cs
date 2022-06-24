@@ -1,0 +1,17 @@
+﻿using HurricaneVR.Framework.Core;
+using HurricaneVR.Framework.Core.Grabbers;
+using UnityEngine;
+
+namespace HurricaneVR.Samples
+{
+    public class Holster : HVRSocket
+    {
+        protected override Quaternion GetRotationOffset(HVRGrabbable grabbable)
+        {
+            var holsertOrientation = grabbable.GetComponent<HolsterOrientation>();
+            if (holsertOrientation && holsertOrientation.Orientation)
+                return holsertOrientation.Orientation.localRotation;
+            return base.GetRotationOffset(grabbable);
+        }
+    }
+}

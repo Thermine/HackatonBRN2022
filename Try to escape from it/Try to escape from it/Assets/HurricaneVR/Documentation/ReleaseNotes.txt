@@ -1,0 +1,138 @@
+Release 1.5
+Bug Fixes:
+Fix resetting parent from socket release when application is quitting
+Fix controller events firing when application is quitting
+Fix hand model parenting check
+Fix grabbable joint anchor
+Fix being able to grab from sockets while force grabbing
+
+Enhancements:
+Easily share grabbable and hand settings with the new HVRJointSettings Scriptable Object: Configurable joint scriptable object used for grabbable joints and custom physics hand strength
+Hand grab system updated to use new HVRJointSettings that allows grabbables to override the hand strength for separate settings for one and two handed grabbing
+New physics based recoil component with scriptable object settings with up force, torque, backwards force, and side to side random options
+New assault rifle example with automatic fire, chamber check, charging handle, chambered round.
+New pump shotgun example
+Ammo can have damage, range, and force assigned
+Pistol updated to use the new recoil system, chamber check, slide bullet eject
+Grabbable can have additional colliders set for ignoring collision with the hands while grabbing
+Grabbable can force overlap clearance or after a timeout for re-enabling collision with the hand after release
+Posable hand supports less than 5 fingers
+Posable hand capsule collider generation helper
+Posable hand mirror settings to easily mirror poses for mirrored rigs
+New waist tracking component that keeps the waist position when looking down
+Ring highlight given line of sight and distance options for display
+New scene with custom 4 finger hand setup
+
+
+Bug Fixes:
+Fixed the raycastgun not firing it's Fired event
+
+Release 1.41
+
+Bug Fixes:
+Fix levers to allow rotation all on 3 axis and not just X/Z
+Fix grabbable to reset the inertia tensor and center of mass on release
+
+Enhancements:
+Add option to use AND/OR condition on sockets with multiple filters.
+Add option to the HVRDamageHandler to be damageable or not.
+A grabbable which requires another grabbable to be held, can now have the hand moved to the required grabbable if that one was released
+Useful for something like the pistol stabilizer where you don't want the gun to drop if the main grip was let go.
+Add stabilizer grip to the pistol
+Added OnDeactivate to complement OnActivate to the grabbable component
+Add option to player inputs to swap move/turn axis
+
+
+Release 1.4
+
+Bug Fixes:
+Fix bug where rigid body state was reset on release when one hand was still grabbing for two handed objects.
+Fix bug where tooltips for custom scripts wouldn't show
+Fix bug where inspector scripts wouldn't open when double clicking the their property field
+Fix 2019 using statements that shouldn't exist causing 2020 compiler errors
+Fix renderer bound check for socket scaling to only use mesh renderers
+
+Enhancements:
+Easily record the hand pose state for dynamic poses while in play mode to use for a static pose
+Pistol upgraded to require magazine, bullet chambering, and animation
+Option on Player Controller to push back when trying to walk through walls.
+Option on Player Controller to push back when leaning to far into something.
+Removed hard coded CameraRig adjustment buttons.
+Add option to sockets that prevents a socketed item from being grabbed out.
+Add ForceRelease method to the grabbable class
+Add GrabsFromHand option to sockets that will allow the socket to remove grabbables from a hand when hovering.
+Added Vive Cosmos support and SteamVR bindings.
+Player Controller sphere cast grounded check.
+Add FadeFromLeaning option to screen fade when leaning to far into something
+Added Basic jump to the player controller
+Updated Screen Fade and Ring Highlight materials to use UI shaders to work with all pipelines.
+Added ability to disable hand model parenting on grab. (by user request)
+Added component that lets a grabbable require another to be grabbed
+Add option on a required grabbable to drop if the required grabbable itself is dropped.
+Add option on the grabbable bags to prioritize non held items over held items
+Add override SFX option to socket - "AudioGrabbedOverride" and "AudioReleasedOverride"
+Added basic "offset" grab that doesn't use static or dynamic poses.
+Experimental dash teleport
+
+Release 1.3
+
+Bug Fixes:
+
+Fixed a bug when holding something in the left hand and then teleporting.
+Fixed issues with multiple UI world canvases with multiple UI pointers.
+Fixed triggers causing head collision fade.
+Fixed grabbable rigidbody state getting stuck with no gravity / kinematic when hand swapping over a HVRSocket
+
+Enhancements:
+PUN2 Progress and basic example scene
+
+Release 1.2
+
+Bug Fixes:
+
+Force grabber stops aiming at a grabbed object if it was aiming before it was grabbed
+Fixed SteamVR Oculus touch grip bindings to use trigger
+Disable teleport while not grounded
+Fixed enum flags socket filter when socketable has multiple flags
+Fixed vive steamvr trackpad bindings and XRInput bindings to apply to trackpad raw inputs for clarity
+
+Enhancements:
+
+Added Keypad unlocking door example
+Added screen fade component / prefab
+Added head collision fade by distance
+Added SteamVR scene
+Heavy two handed hammer example (progress)
+Added Configurable gravity and max fall speed to the player controller
+Added the ability to toggle crouch to a configurable height
+Added collision events component so you can react to impulse force / velocity thresholds (useful for breaking things)
+Allow scaling of socket visuals by x,y, and z
+HVRSocketHoverScale now smoothly transitions between full and default scale
+Holster example
+Added waist transform to the Player controller with configurable offset relative to the adjusted camera height
+
+
+
+Release 1.1
+
+Bug Fixes:
+
+Fix Vive controller input settings
+Fix controller offset y/z for left hand
+Fix examples reset button mesh collider missing
+Fix physics grabber disabling collisions on the grabbable
+Fix physics grabber grab range
+Fix hand model having its layer changed to grabbable by the physics grabber
+
+Enhancements:
+
+Force Grabber has configurable max collision velocity, and max post auto grab velocity if you miss the grab
+Physics grabber more stable on grabbing moving objects
+Collider distance option for Trigger grabbable bag when checking for the closest grabbable.
+Added a Angular velocity threshold check when converting hand angular to linear velocity while throwing
+Added line of sight checks for force grabber and hand grabber
+Clone poses in the HVRHandPoser instead of using the default
+Added additional objects to further demonstrate how to create doors and static poses
+SteamVR(2019) support with bindings for Oculus,WMR,HTC Vive, Knuckles
+Added ability to vibrate the controllers
+
