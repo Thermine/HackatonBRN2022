@@ -1,0 +1,20 @@
+{
+    "name": "HurricaneVR.Oculus",
+    "references": [
+        "Oculus.VR",
+        "Hurricane.Shared"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [
+        ""
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "HVR_OCULUS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

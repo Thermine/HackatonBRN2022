@@ -5,19 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/HurricaneVR/Samples/Scenes/Examples.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/HurricaneVR/Framework/Integrations/SteamVR/SteamVR_Scene.unity
-    guid: 4f6a6457ace38df408174356e912acd9
-  - enabled: 0
-    path: Assets/HurricaneVR/Framework/Integrations/PUN/Scenes/PunExampleScene.unity
-    guid: c5895ba3cf007834b837da8b14f08b33
-  - enabled: 0
-    path: Assets/HurricaneVR/Framework/Integrations/PUN/Scenes/Pun2SmoothSync.unity
-    guid: 28dbb0b9518289b4abfa1bc074bf3db7
-  - enabled: 0
-    path: Assets/HurricaneVR/Samples/Scenes/Recording.unity
-    guid: d3d13ae745e2ab94d95001dd541f34b5
-  m_configObjects: {}
+    path: Assets/Project files/Scenes/MainGameScene.unity
+    guid: 5a77c0fe79da5a941b76bb1822498236
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a7205bdd6d981cd41af36fb874e9718f,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0d31b6e2b67e0a247885cccb114bf275,
+      type: 2}
